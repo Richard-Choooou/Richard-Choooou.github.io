@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    background: rgb(33, 12, 13);
+    min-width: 1366px;
+    font-family: 'Microsoft YaHei';
+    color: white;
+    overflow: hidden;
+}
+div#media{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -999;
+}
+div#wrapper{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+div#content{
+	margin: 0 auto;
+	width: 700px;
+	/*height: 100vh;*/
+	text-align: center;
+	/*background: yellowgreen;*/
+	position: relative;
+	transition: all 2s;
+	transform:rotateX(80deg);
+	-webkit-transform:rotateX(80deg); /* Safari and Chrome */
+	-moz-transform:rotateX(80deg); /* Firefox */
+	transform:rotate3d(1,1,0,80deg);
+	opacity: 0;
+}
+
+.init{
+	transform:rotateX(0deg) !important;
+	-webkit-transform:rotateX(0deg) !important; /* Safari and Chrome */
+	-moz-transform:rotateX(0deg) !important; /* Firefox */
+	transform:rotate3d(0,0,0,45deg) !important;
+	opacity: 1 !important;
+}
+div#headportraitWrapper{
+	margin: 0 auto;
+	margin-top: 15vh;
+	height: 220px;
+	width: 220px;
+	background: #a7a7a7;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 216px;
+	transition: all 1s cubic-bezier(0.4, 0.4, 0.81, 1.51);
+}
+div#headportraitWrapper:hover{
+	transform:rotateY(180deg) !important;
+	-webkit-transform:rotateY(180deg) !important; /* Safari and Chrome */
+	-moz-transform:rotateY(180deg) !important; /* Firefox */
+}
+img#headportrait{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
