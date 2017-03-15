@@ -4,7 +4,7 @@
 }
 body {
     background: rgb(33, 12, 13);
-    min-width: 1366px;
+    /*min-width: 1366px;*/
     font-family: 'Microsoft YaHei';
     color: white;
     overflow: hidden;
