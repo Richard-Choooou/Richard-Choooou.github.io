@@ -6,13 +6,14 @@
 		<link rel="stylesheet" href="css/index.css" />
 	</head>
 	<body>
-		<div id="media">
-			<video width="100%" height="100%" autoplay loop style="min-width: 1366px;">
+		<!--<div id="media">-->
+			<!--<video width="100%" height="100%" autoplay loop style="min-width: 1366px;">
 				<source src="video/bg-video.mp4" type="video/mp4">
 				<source src="video/bg-video.ogg" type="video/ogg">
 				<source src="video/bg-video.webm" type="video/webm">
-			</video>
-		</div>
+			</video>-->
+			<div id="container"><div id="output"></div></div>
+		<!--</div>-->
 		<div id="wrapper">
 			<div id="content">
 				<div id="headportraitWrapper">
@@ -23,10 +24,20 @@
 				<h2>爱好：看电影</h2>-->
 			</div>
 		</div>
-		
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/vector.js" ></script>
 		<script>
 			window.onload=function(){
 				document.getElementById('content').className+='init';
+				var victor = new Victor("container", "output");
+				var theme = [
+						["#002c4a", "#005584"],
+						["#35ac03", "#3f4303"]
+					]
+		        var random = Math.ceil(Math.random()*2)-1;
+		        console.log(random);
+		        var color = theme[random];
+		        victor(color).set();
 			}
 		</script>
 	</body>
