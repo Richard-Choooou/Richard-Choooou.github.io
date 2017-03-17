@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body {
-    background: rgb(33, 12, 13);
+    background: #2672ec;
     /*min-width: 1366px;*/
     font-family: 'Microsoft YaHei';
     color: white;
@@ -24,7 +24,7 @@ div#wrapper{
 div#content{
 	margin: 0 auto;
 	padding-top: 15vh;
-	width: 700px;
+	/*width: 700px;*/
 	/*height: 100vh;*/
 	text-align: center;
 	/*background: yellowgreen;*/
@@ -44,7 +44,7 @@ div#content{
 	transform:rotate3d(0,0,0,45deg) !important;
 	opacity: 1 !important;
 }
-div#headportraitWrapper{
+div.headportraitWrapper{
 	margin: 0 auto;
 	/*margin-top: 15vh;*/
 	height: 220px;
@@ -57,6 +57,9 @@ div#headportraitWrapper{
 	backface-visibility:hidden;
 	z-index: 1;
 }
+.blueBack{
+	/*background: #35ac03 !important;*/
+}
 div#overturnDiv:hover div:nth-of-type(1){
 	transform:rotateY(-180deg) !important;
 	-webkit-transform:rotateY(-180deg) !important; /* Safari and Chrome */
@@ -65,7 +68,7 @@ div#overturnDiv:hover div:nth-of-type(1){
 /*div#headportraitWrapper:hover{
 
 }*/
-img#headportrait{
+img.headportrait{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
