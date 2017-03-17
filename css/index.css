@@ -124,7 +124,7 @@ div#overturnDiv>div:nth-of-type(2){
 	background: #a7a7a7;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 216px;
+	/*line-height: 216px;*/
 	z-index: 2;
 	transition: all .8s ease-in-out;
 	backface-visibility:hidden;
