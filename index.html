@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="baidu-site-verification" content="PVbFtTnOtZ" />
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>Richard Chou's home page</title>
-		<link rel="stylesheet" href="css/index.css" />
-		
-	</head>
-	<body>
-		<!--<div id="media">-->
-			<!--<video width="100%" height="100%" autoplay loop style="min-width: 1366px;">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="baidu-site-verification" content="PVbFtTnOtZ" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Richard Chou's home page</title>
+	<link rel="stylesheet" href="css/index.css" />
+
+</head>
+
+<body>
+	<!--<div id="media">-->
+	<!--<video width="100%" height="100%" autoplay loop style="min-width: 1366px;">
 				<source src="video/bg-video.mp4" type="video/mp4">
 				<source src="video/bg-video.ogg" type="video/ogg">
 				<source src="video/bg-video.webm" type="video/webm">
 			</video>-->
-			<div id="container"><div id="output"></div></div>
-		<!--</div>-->
-		<div id="wrapper">
-			<div id="content">
-				<div id="overturnDiv">
-					<div class="headportraitWrapper">
-						<img src="img/headportrait.png" class="headportrait" />
-					</div>
-					<div class="headportraitWrapper blueBack">
-						<img src="img/relHead.png" class="headportrait" />
-					</div>
+	<div id="container">
+		<div id="output"></div>
+	</div>
+	<!--</div>-->
+	<div id="wrapper">
+		<div id="content">
+			<div id="overturnDiv">
+				<div class="headportraitWrapper">
+					<img src="img/headportrait.png" class="headportrait" />
 				</div>
-				
-				<a href="/myBlogs">技术博客</a>
-				<!--<a href="/myNotebook">私人笔记</a>-->
+				<div class="headportraitWrapper blueBack">
+					<img src="img/relHead.png" class="headportrait" />
+				</div>
 			</div>
+
+			<a href="/myBlogs">技术博客</a>
+			<!--<a href="/myNotebook">私人笔记</a>-->
 		</div>
-		<script src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/vector.js" ></script>
-		<script>
-			window.onload=function(){
-				document.getElementById('content').className+='init';
-				var victor = new Victor("container", "output");
-				var theme = [
-						["#002c4a", "#005584"],
-						["#35ac03", "#3f4303"]
-					]
-		        var random = Math.ceil(Math.random()*2)-1;
-		        console.log(random);
-		        var color = theme[random];
-		        victor(color).set();
-			}
-		</script>
-	</body>
-	
+	</div>
+	<!--<script src="js/jquery.js"></script>-->
+	<script type="text/javascript" src="js/vector.js"></script>
+	<script>
+		window.onload = function() {
+			document.getElementById('content').className += 'init';
+			var victor = new Victor("container", "output");
+			var theme = [
+				["#002c4a", "#005584"],
+				["#35ac03", "#3f4303"]
+			]
+			var random = Math.ceil(Math.random() * 2) - 1;
+			console.log(random);
+			var color = theme[random];
+			victor(color).set();
+		}
+	</script>
+</body>
+
 </html>
